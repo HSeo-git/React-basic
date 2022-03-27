@@ -12,7 +12,7 @@ const BlogForm = () => {
     };
     return(
         <div>
-            <h1>Create a blog post</h1>
+            <h1>Blog post</h1>
             <div className="mb-3">
                 <lable className="form-lable">Title</lable>
                     <input

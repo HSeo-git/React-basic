@@ -1,21 +1,30 @@
-import { Link, NavLink } from 'react-router-dom';
-
 const NavBar = () => {
     return(
-        <nav className="navbar navbar-dark bg-dark">
-            <div className="container">
-                <Link className="navbar-brand" to="/">Home</Link>
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-link"
-                        aria-current="page"
-                        to="/blogs">
-                        Blogs
-                    </NavLink>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">HG.Seo's Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" exact href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" exact href="/blogs">ListPage</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" exact href="/blogs/create">Create</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" exact href="/blogs/edit">Edit</a>
+                        </li>
+                    </ul>
+                <span class="navbar-text">
+                    For a Better Tomorrow!
+                </span>
+                </div>
             </div>
         </nav>
     )
