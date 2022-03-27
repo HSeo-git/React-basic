@@ -1,7 +1,8 @@
 const HomePage = () => {
     return(
-        <div>HomePage</div>
-    );
-};
+        <div className="cat-image">
+            <img className="CatImage" alt="Cat" src="lu.png"/>
+        </div>
+    )};
 
 export default HomePage
